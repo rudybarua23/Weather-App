@@ -1,0 +1,51 @@
+.hidden {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the body takes up the full height and uses a flexbox */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #F08080;
+}
+
+/* Container to hold weather and forecast */
+.container {
+    text-align: center;
+}
+
+/* Weather div styling */
+#weather {
+    margin-bottom: 20px; /* Space between weather and forecast */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+/* Forecast div styling */
+#forecast {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensure items wrap to the next line if there's not enough space */
+    gap: 10px; /* Space between forecast items */
+}
+
+/* Individual forecast day styling */
+#forecast > div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 150px; /* Fixed width for forecast items */
+}
